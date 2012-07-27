@@ -29,16 +29,29 @@
     <div id="container" role="main">
       <section id="new_form">
       	<figure>
-          	<img src="img/profile_photo.png" alt="" />
+          	<img src="img/profile-photo.png" alt="" />
           </figure>
           <form action="">
           	<fieldset>
-            	<label></label>
-                <label class="min_label"></label>
-                <label class="min_label"></label>
-                <label class="min_label" rel="last"></label>
-                <label></label>
-                <label></label>
+            	<label>
+                	<input class="no_bg" placeholder="Nombre" type="text" />
+                    <input class="no_bg" placeholder="Apellido" type="text" />
+                </label>
+                <label class="min_label">
+                	<a title="Agregar Teléfono" class="telefonos" href="#">Telefónos</a>
+                </label>
+                <label class="min_label">
+                	<a title="Agregar Email" class="emails" href="#">Emails</a>                	
+                </label>
+                <label class="min_label" rel="last">
+                	<a title="Agregar Identificación" class="identifications" href="#">Identificatións</a>
+                </label>
+                <label>
+                	<a title="Agregar Dirección" class="direccion" href="#">Dirección</a>
+                </label>
+                <label>
+                	<a title="Agregar Otro" class="custom_attributes" href="#">Custom Attributes</a>
+                </label>
                 <input type="submit" value="Cadastrar" />
 			</fieldset>
           </form>
@@ -50,6 +63,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
     <script src="js/script.js"></script>
+    <script src="js/custom_form.js"></script>
 
 </body>
 </html>
