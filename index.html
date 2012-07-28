@@ -33,10 +33,18 @@
           </figure>
           <form action="">
           	<fieldset>
-            	<label>
-                	<input class="no_bg" placeholder="Nombre" type="text" />
-                    <input class="no_bg" placeholder="Apellido" type="text" />
-                </label>
+            	<div>
+                	<label for="nombre">
+                    	<input class="no_bg" name="nombre" placeholder="Nombre" type="text" />
+					</label>
+                    <label for="apellido">
+                    	<input class="no_bg" name="apellido" placeholder="Apellido" type="text" />
+                    </label>
+                    <label for="sexo">
+                    	<input type="checkbox" value="masculino" />M
+                        <input type="checkbox" value="feminino" />F
+					</label>
+                </div>
                 <label class="min_label">
                 	<a title="Agregar Teléfono" class="telefonos" href="#">Telefónos</a>
                 </label>

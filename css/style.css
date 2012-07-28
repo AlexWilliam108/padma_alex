@@ -21,7 +21,7 @@ section#new_form > form{width:704px; height:auto; float:left; margin:0 13px}
 
 section#new_form > form > fieldset{width:100%; height:100%; float:left}
 
-section#new_form > form > fieldset > label{width:702px; height:36px; #f8f8f8; border:1px solid #cfcfcf; float:left; margin:0 0 7px 0}
+section#new_form > form > fieldset > label, section#new_form > form > fieldset > div{width:702px; height:36px; #f8f8f8; border:1px solid #cfcfcf; float:left; margin:0 0 7px 0}
 section#new_form > form > fieldset > label.min_label{width:228px; margin:0 7px 7px 0}
 section#new_form > form > fieldset > label[rel="last"]{width:228px; margin:0 0 7px 0}
 section#new_form > form > fieldset > label:hover, section#new_form > form > fieldset > label:focus{background: #008df2;}
@@ -35,7 +35,12 @@ section#new_form > form > fieldset > label > a.identifications {background-posit
 section#new_form > form > fieldset > label > a.direccion {background-position: 304px 10px;}
 section#new_form > form > fieldset > label > a.custom_attributes {background-position: 278px 10px;}
 
-section#new_form > form > fieldset > label > input{float:left; width:auto; height:34px; padding-left:8px; margin-left:10px; font:bold 17px Arial,Helvetica,sans-serif; color:#333}
+section#new_form > form > fieldset > div > label {float: left;}
+section#new_form > form > fieldset > div > label[for="sexo"] {float: right; padding: 0 6px 0 0; font-size: 15px; color: #4d4d4d; font-weight: bold;}
+section#new_form > form > fieldset > div > label[for="sexo"] > input {width: auto; float: none; vertical-align: middle; margin: 1px 7px 3px;}
+section#new_form > form > fieldset > div > label[for="apellido"] > input {margin-left: 0; padding-left:0;}
+
+section#new_form > form > fieldset > div > label > input{float:left; width:70px; height:34px; padding-left:8px; margin-left:10px; font:bold 17px Arial,Helvetica,sans-serif; color:#333; border: 0;}
 
 section#new_form > form > fieldset > label input.no_bg {background: transparent; border:0;}
 
