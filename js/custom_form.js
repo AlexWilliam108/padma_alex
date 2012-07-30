@@ -1,4 +1,4 @@
-function CustomForm(class){
+/*function CustomForm(class){
         this.inputArray = $('input');
 	this.selectArray = $('select');
 	this.optionArray = $('option');
@@ -109,3 +109,4 @@ CustomForm.prototype.choose = function(e){
 }
 
 var formulario = new CustomForm('styled');
+*/
