@@ -8,7 +8,7 @@ $(function() {
 	$('label').each(function() {
 		$(this).find('.more-inputs').click(function(e) {
 			e.preventDefault();
-			$(this).next().css({'display' : 'block'}).parent().css({'height' : 'auto'})
+			$(this).next().css({'display' : 'block'}).closest('label').css({'height' : 'auto'})
 			.find('.more-inputs, .input-container').clone().insertAfter('.input-container');
 			$('.input-container:last-child').css({'display' : 'none'});
 		});
