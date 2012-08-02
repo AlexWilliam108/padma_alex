@@ -1,7 +1,7 @@
 /* =============================================================================
    HTML5 CSS Reset   
    ========================================================================== */
-article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html,button,input,select,textarea{font-family:sans-serif;color:#222}body{margin:0;font-size:1em;line-height:1.4}a{color:#00e}a:visited{color:#551a8b}a:hover{color:#06e}a:focus{outline:thin dotted}a:hover,a:active{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}blockquote{margin:1em 40px}dfn{font-style:italic}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}ins{background:#ff9;color:#000;text-decoration:none}mark{background:#ff0;color:#000;font-style:italic;font-weight:bold}pre,code,kbd,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:"";content:none}small{font-size:85%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}ul,ol{margin:0;padding:0}dd{margin:0}nav ul,nav ol{list-style:none;list-style-image:none;margin:0;padding:0}img{border:0;-ms-interpolation-mode:bicubic;vertical-align:middle}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:0;margin:0;padding:0}label{cursor: default}legend{border:0;*margin-left:-7px;padding:0;white-space:normal}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal}button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button;*overflow:visible}button[disabled],input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*width:13px;*height:13px}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-search-cancel-button{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top;resize:vertical}input:valid,textarea:valid{}input:invalid,textarea:invalid{background-color:#f0dddd}table{border-collapse:collapse;border-spacing:0}td{vertical-align:top}
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html,button,input,select,textarea{font-family:sans-serif;color:#222}body{margin:0;font-size:1em;line-height:1.4}a{color:transparent}a:visited{color:transparent}a:hover{color:transparent}a:focus{outline:thin dotted}a:hover,a:active{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}blockquote{margin:1em 40px}dfn{font-style:italic}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}ins{background:#ff9;color:#000;text-decoration:none}mark{background:#ff0;color:#000;font-style:italic;font-weight:bold}pre,code,kbd,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:"";content:none}small{font-size:85%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}ul,ol{margin:0;padding:0}dd{margin:0}nav ul,nav ol{list-style:none;list-style-image:none;margin:0;padding:0}img{border:0;-ms-interpolation-mode:bicubic;vertical-align:middle}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:0;margin:0;padding:0}label{cursor: default}legend{border:0;*margin-left:-7px;padding:0;white-space:normal}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal}button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button;*overflow:visible}button[disabled],input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*width:13px;*height:13px}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-search-cancel-button{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top;resize:vertical}input:valid,textarea:valid{}input:invalid,textarea:invalid{background-color:#f0dddd}table{border-collapse:collapse;border-spacing:0}td{vertical-align:top}
 
 
 /* ===== Primary Styles ========================================================
@@ -21,19 +21,19 @@ section#new_form > form{width:704px; height:auto; float:left; margin:0 13px}
 
 section#new_form > form > fieldset{width:100%; height:100%; float:left}
 
-section#new_form > form > fieldset > label, section#new_form > form > fieldset > div{width:702px; height:36px; background: #f8f8f8; border:1px solid #cfcfcf; float:left; margin:0 0 7px 0}
+section#new_form > form > fieldset > label, section#new_form > form > fieldset > div{width:702px; height:36px; background: #f8f8f8; border:1px solid #cfcfcf; float:left; margin:0 0 7px 0;}
 section#new_form > form > fieldset > label.min_label{width:228px; margin:0 7px 7px 0; height:auto; position:relative;}
 section#new_form > form > fieldset > label[rel="last"]{width:228px; margin:0 0 7px 0}
-section#new_form > form > fieldset > label:hover, section#new_form > form > fieldset > label:focus{background: #008df2;}
 section#new_form > form > fieldset > label:first-child:hover{background: transparent;}
 
-section#new_form > form > fieldset > label > a{background:url(../img/bt_more-black.png) no-repeat 0 0; text-align:center; display:block; height:36px; font:bold 12px/36px Arial,Helvetica,sans-serif; text-decoration:none; color:#333; float: left; width: 100%;}
-section#new_form > form > fieldset > label > a:hover{background:url(../img/bt_more-white.png) no-repeat 0 10px; color:#fff}
+section#new_form > form > fieldset > label > a{background:url(../img/bt_more-black.png) no-repeat 0 0; text-align:center; display:block; height:36px; font:bold 12px/36px Arial,Helvetica,sans-serif; text-decoration:none; color:#333; float: left; width: 100%;outline:none!important;}
+section#new_form > form > fieldset > label > a:hover{background: #008df2 url(../img/bt_more-white.png) no-repeat 0 10px; color:#fff}
 section#new_form > form > fieldset > label > a.telefonos {background-position: 66px 10px;}
 section#new_form > form > fieldset > label > a.emails {background-position: 75px 10px;}
 section#new_form > form > fieldset > label > a.identifications {background-position: 53px 10px;}
 section#new_form > form > fieldset > label > a.direccion {background-position: 304px 10px;}
 section#new_form > form > fieldset > label > a.custom_attributes {background-position: 278px 10px;}
+section#new_form > form > fieldset > label > a.delete{color: red; background:url(../img/bt_less-red.png) no-repeat;}
 
 section#new_form > form > fieldset > label > input.no_bg {background: transparent; border:0;}
 
@@ -45,10 +45,9 @@ section#new_form > form > fieldset > div > label > input{background: transparent
 
 section#new_form > form > fieldset > label > div.input-container {
 	background: #f8f8f8;
-	border-top: 1px solid #CFCFCF;
 	border-bottom: 1px solid #CFCFCF;
 	float: left;
-	height: 213px;
+	min-height: 84px;
 	position: relative;
 	top: 0;
 	width: 100%;
