@@ -15,13 +15,19 @@
 	});
 });*/
 
+function deleteFields()  {
+	$('label').each(function() {
+		if ($(this).find('a').has('delete') && ('telefonos')) {
+				$(this).find('a').css({'background-position' : '66px 10px'}).attr('title', 'Eliminar Teléfono');	
+		}
+	});
+}
+
 $(function() {
 	$('label').each(function() {
 		$(this).find('.more-inputs').click(function(e) {
 			e.preventDefault();
-			if ($(this).has('delete') && ('telefonos')) {
-				$(this).css({'background-position' : '66px 10px'}).attr('title', 'Eliminar Teléfono');	
-			}
+			deleteFields();
 			$(this).addClass('delete').next().css({'display' : 'block'})
 			.closest('label').css({'height' : 'auto'})
 		});
