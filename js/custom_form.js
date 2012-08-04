@@ -108,5 +108,4 @@ CustomForm.prototype.choose = function(e){
 	}
 }
 
-var formulario = new CustomForm('styled');
-*/
+var formulario = new CustomForm('styled');*/

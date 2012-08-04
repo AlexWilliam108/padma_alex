@@ -31,7 +31,7 @@
       	<figure>
           	<img src="img/profile-photo.png" alt="" />
           </figure>
-          <form action="">
+          <form id="form_new" action="">
           	<fieldset>
             	<div>
                 	<label for="nombre">
@@ -48,7 +48,26 @@
                 <label class="min_label">
                 	<a title="Agregar Teléfono" class="more-inputs telefonos" href="#">Telefónos</a>
                     <div class="input-container">
-                    	
+                    	<label for="category_telefonos">Category
+                        	<select name="telefonos">
+                            	<option value="null"></option>
+                            	<option value="casa">Casa</option>
+                                <option value="oficina">Oficiona</option>
+                                <option value="celular">Celular</option>
+                                <option value="otro">Otro</option>
+                                <option value="custom">Custom</option>
+                            </select>
+                            <input class="custom_value" name="custom" type="text"/>
+						</label>
+                        <label for="value_telefonos">Value*
+                        	<input name="value_telefonos" type="text" />
+                        </label>
+                        <label class="public" for="contact_attributes">
+                            <input type="checkbox" value="public" />Public
+						</label>
+                        <label class="primary" for="contact_attributes">
+                        	<input type="checkbox" value="primary" />Primary
+						</label>	
                     </div>
                 </label>
                 <label class="min_label">

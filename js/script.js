@@ -23,6 +23,13 @@ function deleteFields()  {
 	});
 }
 
+function customChange() {
+	$('select').change(function() {
+		if($("option[value='custom']").is(":selected")) {$(this).next().css({'display' : 'block'});}
+		else{$(this).next().css({'display' : 'none'});}
+	});
+}
+
 $(function() {
 	$('label').each(function() {
 		$(this).find('.more-inputs').click(function(e) {
@@ -35,5 +42,7 @@ $(function() {
 });
 
 $(function() {
-	
+	customChange();
+	$('.input-container').css({'display' : 'block'});
+	$('.min_label').css({'height' : 'auto'});
 });
