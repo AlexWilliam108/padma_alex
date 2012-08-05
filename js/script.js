@@ -4,29 +4,26 @@
 	Alex_William108
 */
 
-/*$(function() {
-	$('label').each(function() {
-		$(this).find('.more-inputs').click(function(e) {
-			e.preventDefault();
-			$(this).next().css({'display' : 'block'}).closest('label').animate({'height' : '300px'})
-			.find('.more-inputs, .input-container').clone().insertAfter('.input-container');
-			$('.input-container:last-child').css({'display' : 'none'});
-		});
-	});
-});*/
-
+/* Criar função para os delets
 function deleteFields()  {
+	var telefonos = ('.telefonos, .delete');
+	var emails = $(this).find('a').filter('.delete, .emails');
 	$('label').each(function() {
-		if ($(this).find('a').has('delete') && ('telefonos')) {
-				$(this).find('a').css({'background-position' : '66px 10px'}).attr('title', 'Eliminar Teléfono');	
+		if($(this).has(telefonos)) {
+			$(this).find('a').css({'background-position' : '66px 10px'}).attr('title', 'Eliminar Teléfono');
+		}
+		else if($(this).has(emails)) {
+			$(this).find('a').css({'background-position' : '75px 10px'}).attr('title', 'Eliminar Emails');
 		}
 	});
-}
+}*/
 
 function customChange() {
-	$('select').change(function() {
-		if($("option[value='custom']").is(":selected")) {$(this).next().css({'display' : 'block'});}
-		else{$(this).next().css({'display' : 'none'});}
+	$('label > select').each(function() {
+		$(this).change(function() {
+			if($(this).find("option[value='custom']").is(":selected")) {$(this).closest('label').next().css({'display' : 'block'});}
+			else{$(this).closest('label').next().css({'display' : 'none'});}
+		});
 	});
 }
 
@@ -34,15 +31,9 @@ $(function() {
 	$('label').each(function() {
 		$(this).find('.more-inputs').click(function(e) {
 			e.preventDefault();
-			deleteFields();
 			$(this).addClass('delete').next().css({'display' : 'block'})
 			.closest('label').css({'height' : 'auto'})
 		});
 	});
-});
-
-$(function() {
 	customChange();
-	$('.input-container').css({'display' : 'block'});
-	$('.min_label').css({'height' : 'auto'});
 });

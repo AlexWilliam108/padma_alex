@@ -57,8 +57,10 @@
                                 <option value="otro">Otro</option>
                                 <option value="custom">Custom</option>
                             </select>
-                            <input class="custom_value" name="custom" type="text"/>
 						</label>
+                        <label for="custom_value">
+                        	<input class="custom_value" name="custom" type="text"/>
+                        </label>
                         <label for="value_telefonos">Value*
                         	<input name="value_telefonos" type="text" />
                         </label>
@@ -71,16 +73,76 @@
                     </div>
                 </label>
                 <label class="min_label">
-                	<a title="Agregar Email" class="emails" href="#">Emails</a>                	
+                	<a title="Agregar Email" class="more-inputs emails" href="#">Emails</a> 
+                    <div class="input-container">
+                    	<label for="category_emails">Category
+                        	<select name="emails">
+                            	<option value="null"></option>
+                            	<option value="casa">Casa</option>
+                                <option value="oficina">Oficiona</option>
+                                <option value="otro">Otro</option>
+                                <option value="custom">Custom</option>
+                            </select>
+						</label>
+                        <label for="custom_value">
+                        	<input class="custom_value" name="custom" type="text"/>
+                        </label>
+                        <label for="value_emails">Value*
+                        	<input name="value_emails" type="text" />
+                        </label>
+                        <label class="public" for="contact_attributes">
+                            <input type="checkbox" value="public" />Public
+						</label>
+                        <label class="primary" for="contact_attributes">
+                        	<input type="checkbox" value="primary" />Primary
+						</label>	
+                    </div>               	
                 </label>
                 <label class="min_label" rel="last">
-                	<a title="Agregar Identificación" class="identifications" href="#">Identificatións</a>
+                	<a title="Agregar Identificación" class="more-inputs identifications" href="#">Identificatións</a>
+                    <div class="input-container">
+                    	<label for="category_identifications">Category
+                        	<select name="identifications">
+                            	<option value="null"></option>
+                            	<option value="dni">DNI</option>
+                                <option value="cpf">CPF</option>
+                                <option value="cup">CUP</option>
+                                <option value="custom">Custom</option>
+                            </select>
+						</label>
+                        <label for="custom_value">
+                        	<input class="custom_value" name="custom" type="text"/>
+                        </label>
+                        <label for="value_identifications">Value*
+                        	<input name="value_identifications" type="text" />
+                        </label>
+                        <label class="public" for="contact_attributes">
+                            <input type="checkbox" value="public" />Public
+						</label>
+                        <label class="primary" for="contact_attributes">
+                        	<input type="checkbox" value="primary" />Primary
+						</label>	
+                    </div>
                 </label>
-                <label>
-                	<a title="Agregar Dirección" class="direccion" href="#">Dirección</a>
+                <label rel="direccion">
+                	<a title="Agregar Dirección" class="more-inputs direccion" href="#">Dirección</a>
                 </label>
-                <label>
-                	<a title="Agregar Otro" class="custom_attributes" href="#">Custom Attributes</a>
+                <label rel="custom_attributes">
+                	<a title="Agregar Otro" class="more-inputs custom_attributes" href="#">Custom Attributes</a>
+                    <div class="input-container">
+                    	<label for="name_customAttributes">Name*
+                        	<input name="name_customAttributes" type="text" />
+                        </label>
+                        <label for="value_customAttributes">Value*
+                        	<input name="value_customAttributes" type="text" />
+                        </label>
+                        <label class="public" for="contact_attributes">
+                            <input type="checkbox" value="public" />Public
+						</label>
+                        <label class="primary" for="contact_attributes">
+                        	<input type="checkbox" value="primary" />Primary
+						</label>	
+                    </div>
                 </label>
                 <input type="submit" value="Cadastrar" />
 			</fieldset>
