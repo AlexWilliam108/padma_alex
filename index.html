@@ -126,6 +126,55 @@
                 </label>
                 <label rel="direccion">
                 	<a title="Agregar Dirección" class="more-inputs direccion" href="#">Dirección</a>
+                    <div class="input-container">
+                    	<label for="category_direccion">Category
+                        	<select name="direccion">
+                            	<option value="null"></option>
+                            	<option value="casa">Casa</option>
+                                <option value="oficina">Oficiona</option>
+                                <option value="otro">Otro</option>
+                                <option value="custom">Custom</option>
+                            </select>
+						</label>
+                        <label for="custom_value">
+                        	<input class="custom_value" name="custom" type="text"/>
+                        </label>
+                        <label for="country_direccion">Country
+                        	<select name="country">
+                            	<option value="null"></option>
+                            	<option value="Argentina">Argentina</option>
+                            </select>
+						</label>
+                        <label for="state_direccion">State
+                        	<select name="state_direccion">
+                            	<option value="null"></option>
+                            	<option value="Capital_Federal">Capital Federal</option>
+                                <option value="Buenos_Aires">Buenos Aires</option>
+                            </select>
+						</label>
+                        <label for="city_direccion">City
+                        	<select name="city_direccion">
+                            	<option value="null"></option>
+                            	<option value="Capital_Federal">Belgrano</option>
+                                <option value="Buenos_Aires">Palermo</option>
+								<option value="Capital_Federal">Martinez</option>
+                                <option value="Buenos_Aires">Olivos</option>
+                                <option value="Buenos_Aires">San Isidro</option>
+                            </select>
+						</label>
+                        <label for="postal_direccion">Postal Code
+                        	<input class="postal_direccion" name="custom" type="text"/>
+						</label>                        
+                        <label for="value_direccion">Value*
+                        	<input name="value_direccion" type="text" />
+                        </label>
+                        <label class="public" for="contact_attributes">
+                            <input type="checkbox" value="public" />Public
+						</label>
+                        <label class="primary" for="contact_attributes">
+                        	<input type="checkbox" value="primary" />Primary
+						</label>	
+                    </div>
                 </label>
                 <label rel="custom_attributes">
                 	<a title="Agregar Otro" class="more-inputs custom_attributes" href="#">Custom Attributes</a>

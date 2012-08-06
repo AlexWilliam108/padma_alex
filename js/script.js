@@ -4,20 +4,6 @@
 	Alex_William108
 */
 
-/* Criar função para os delets
-function deleteFields()  {
-	var telefonos = ('.telefonos, .delete');
-	var emails = $(this).find('a').filter('.delete, .emails');
-	$('label').each(function() {
-		if($(this).has(telefonos)) {
-			$(this).find('a').css({'background-position' : '66px 10px'}).attr('title', 'Eliminar Teléfono');
-		}
-		else if($(this).has(emails)) {
-			$(this).find('a').css({'background-position' : '75px 10px'}).attr('title', 'Eliminar Emails');
-		}
-	});
-}*/
-
 function customChange() {
 	$('label > select').each(function() {
 		$(this).change(function() {
@@ -27,13 +13,29 @@ function customChange() {
 	});
 }
 
+function optionDireccion() {
+	$('label[rel="direccion"] > .input-container label > select[name!="direccion"]').change(function() {
+			if($(this).find('option[value!="null"]')){
+				$(this).closest('label').next().css({'display' : 'block'});
+			}
+			if($(this).find('option[value="null"]').is(":selected")){
+				$(this).closest('label').next().css({'display' : 'none'});
+			}			
+	});
+}
+
 $(function() {
+	var deleteInput;
 	$('label').each(function() {
 		$(this).find('.more-inputs').click(function(e) {
 			e.preventDefault();
-			$(this).addClass('delete').next().css({'display' : 'block'})
-			.closest('label').css({'height' : 'auto'})
+			deleteInput = $(this).addClass('delete');
+			deleteInput.next().css({'display' : 'block'}).closest('label').css({'height' : 'auto'});
+		deleteInput.click(function() {
+			$(this).removeClass('delete').closest('label').find('.input-container').css({'display' : 'none'}).end().css({'height' : '36px'});
 		});
 	});
+	});
 	customChange();
+	optionDireccion();	
 });
