@@ -55,7 +55,7 @@ section#new_form > form > fieldset > label > div.input-container > label > input
 section#new_form > form > fieldset > label > div.input-container > label > input[type="checkbox"]{float:left; margin:1px 5px 3px; vertical-align:middle; width:auto}
 
 section#new_form > form > fieldset > label[rel="direccion"], section#new_form > form > fieldset > label[rel="custom_attributes"]{width:346px}
-section#new_form > form > fieldset > label[rel="direccion"]{margin-right:8px}
+section#new_form > form > fieldset > label[rel="direccion"]{margin-right:8px; clear:left;}
 section#new_form > form > fieldset > label[rel="direccion"] > div.input-container > label {padding:0 9px 0 69px; width: 220px;}
 section#new_form > form > fieldset > label[rel="custom_attributes"] > div.input-container > label{width:190px; padding:0 9px 0 79px}
 section#new_form > form > fieldset > label[rel="custom_attributes"] > div.input-container > label.primary{width:auto}
