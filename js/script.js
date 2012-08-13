@@ -5,10 +5,14 @@
 */
 
 function customChange() {
-	$('label > select').each(function() {
-		$(this).change(function() {
-			if($(this).find("option[value='custom']").is(":selected")) {$(this).closest('label').next().css({'display' : 'block'});}
-			else{$(this).closest('label').next().css({'display' : 'none'});}
+	$('.input-container > label').each(function() {
+		$(this).find('select').change(function() {
+			if($(this).find("option[value='custom']").is(":selected")) {		
+				$(this).parent().next().css({'display' : 'block'});
+			}
+			else{
+				$(this).parent().next().css({'display' : 'none'});
+			}
 		});
 	});
 }
@@ -25,7 +29,6 @@ function optionDireccion() {
 }
 
 $(function() {
-
     obj = {'telefonos': '<a title="Agregar Teléfono" class="more-inputs telefonos" href="#">Telefónos</a><div class="input-container"><label for="category_telefonos">Category<select name="telefonos"><option value="null"></option><option value="casa">Casa</option><option value="oficina">Oficiona</option><option value="celular">Celular</option><option value="otro">Otro</option><option value="custom">Custom</option></select></label><label for="custom_value"><input class="custom_value" name="custom" type="text"/></label><label for="value_telefonos">Value*<input name="value_telefonos" type="text" /></label><label class="public" for="contact_attributes"><input type="checkbox" value="public" />Public</label><label class="primary" for="contact_attributes"><input type="checkbox" value="primary" />Primary</label></div>',
     'emails': '<a title="Agregar Email" class="more-inputs emails" href="#">Emails</a> <div class="input-container"><label for="category_emails">Category<select name="emails"><option value="null"></option><option value="casa">Casa</option><option value="oficina">Oficiona</option><option value="otro">Otro</option><option value="custom">Custom</option></select></label><label for="custom_value"><input class="custom_value" name="custom" type="text"/></label><label for="value_emails">Value*<input name="value_emails" type="text" /></label><label class="public" for="contact_attributes"><input type="checkbox" value="public" />Public</label><label class="primary" for="contact_attributes"><input type="checkbox" value="primary" />Primary</label></div>   ',
     'identifications': '<a title="Agregar Identificación" class="more-inputs identifications" href="#">Identificatións</a><div class="input-container"><label for="category_identifications">Category<select name="identifications"><option value="null"></option><option value="dni">DNI</option><option value="cpf">CPF</option><option value="cup">CUP</option><option value="custom">Custom</option></select></label><label for="custom_value"><input class="custom_value" name="custom" type="text"/></label><label for="value_identifications">Value*<input name="value_identifications" type="text" /></label><label class="public" for="contact_attributes"><input type="checkbox" value="public" />Public</label><label class="primary" for="contact_attributes"><input type="checkbox" value="primary" />Primary</label></div>',
@@ -36,8 +39,12 @@ $(function() {
 	$('label').each(function() {
 		function callback(e) {
 			e.preventDefault();
-			
+			customChange();
+			optionDireccion();				
 			if($(this).hasClass('delete')){
+			    if($(this)[0].tagName != 'A')
+			        return true;
+			        
 				var array_a = $(this).parent().find('.more-inputs');
 				var array_div = $(this).parent().find('.input-container');
 				
@@ -47,22 +54,14 @@ $(function() {
 
 				$(this).removeClass('delete').parent().css({'height' : 'auto'});
 				$(this).next().css({'display' : 'none'});
-				
-				// remove os últimos elementos inseridos
 				$(this).next().remove();
 				$(this).remove();
 			} else{
 				$(this).addClass('delete').next().css({'display' : 'block'}).closest('label').css({'height' : 'auto'});
-				
-				// clona o objeto
-				// verifica qual objeto deve ser clonado, utilizei como marcador a segunda classe quando o objeto esta encolhido
-				// telefonos, emails, direccion, ... e pego o objeto correto no array obj
 				var obj_class = $(this).attr('class').split(' ')[1];
 				$(this).parent().append($(obj[obj_class]).click(callback));
 			}
 	}
 	$(this).find('.more-inputs').click(callback);
 	});
-	customChange();
-	optionDireccion();	
 });
