@@ -40,6 +40,7 @@ section#new_form > form > fieldset > fieldset > input.no_bg {background: transpa
 section#new_form > form > fieldset > div > label {float: left;}
 section#new_form > form > fieldset > div > label[for="sexo"] {float: right; padding: 0 6px 0 0; font-size: 15px; color: #4d4d4d; font-weight: bold;}
 section#new_form > form > fieldset > div > label[for="sexo"] > input {width: auto; float: none; vertical-align: middle; margin: 1px 7px 3px;}
+section#new_form > form > fieldset > div > label[for="nombre"], section#new_form > form > fieldset > div > label[for="apellido"] {min-width: 120px;}  
 section#new_form > form > fieldset > div > label[for="apellido"] > input {margin-left: 0; padding-left:0;}
 section#new_form > form > fieldset > div > label > input{background: transparent; float:left; width:70px; height:34px; padding-left:8px; margin-left:10px; font:bold 17px Arial,Helvetica,sans-serif; color:#333; border: 0;}
 
