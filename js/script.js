@@ -18,7 +18,7 @@ function customChange() {
 }
 
 function optionDireccion() {
-	$('label[rel="direccion"] > .input-container label > select[name!="direccion"]').change(function() {
+	$('fieldset[rel="direccion"] > .input-container label > select[name!="direccion"]').change(function() {
 			if($(this).find('option[value!="null"]')){
 				$(this).closest('label').next().css({'display' : 'block'});
 			}
@@ -36,7 +36,8 @@ $(function() {
     'custom_attributes': '<a title="Agregar Otro" class="more-inputs custom_attributes" href="#">Custom Attributes</a><div class="input-container"><label for="name_customAttributes">Name*<input name="name_customAttributes" type="text" /></label><label for="value_customAttributes">Value*<input name="value_customAttributes" type="text" /></label><label class="public" for="contact_attributes"><input type="checkbox" value="public" />Public</label><label class="primary" for="contact_attributes"><input type="checkbox" value="primary" />Primary</label></div>'}
 
 	var deleteInput;
-	$('label').each(function() {
+	$('fieldset div.input-container').each(function() {
+		$(this).find('label')
 		function callback(e) {
 			e.preventDefault();
 			customChange();
@@ -62,6 +63,6 @@ $(function() {
 				$(this).parent().append($(obj[obj_class]).click(callback));
 			}
 	}
-	$(this).find('.more-inputs').click(callback);
+	$(this).prev().click(callback);
 	});
 });

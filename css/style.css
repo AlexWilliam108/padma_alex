@@ -20,22 +20,22 @@ section#new_form > figure{width:auto; height:auto; margin:0 0 0 10px; float:left
 section#new_form > form{width:704px; height:auto; float:left; margin:0 13px}
 
 section#new_form > form > fieldset{width:100%; height:100%; float:left}
+section#new_form > form > fieldset > fieldset{width:auto; height:auto; background: #f8f8f8; border:1px solid #cfcfcf; float:left; margin:0 0 7px 0;}
+section#new_form > form > fieldset > div{width:702px; height:36px; background: #f8f8f8; border:1px solid #cfcfcf; float:left; margin:0 0 7px 0;}
+section#new_form > form > fieldset > fieldset.min_label{width:228px; margin:0 7px 7px 0; height:auto; position:relative;}
+section#new_form > form > fieldset > fieldset[rel="last"]{width:228px; margin:0 0 7px 0}
+section#new_form > form > fieldset > fieldset:first-child:hover{background: transparent;}
 
-section#new_form > form > fieldset > label, section#new_form > form > fieldset > div{width:702px; height:36px; background: #f8f8f8; border:1px solid #cfcfcf; float:left; margin:0 0 7px 0;}
-section#new_form > form > fieldset > label.min_label{width:228px; margin:0 7px 7px 0; height:auto; position:relative;}
-section#new_form > form > fieldset > label[rel="last"]{width:228px; margin:0 0 7px 0}
-section#new_form > form > fieldset > label:first-child:hover{background: transparent;}
+section#new_form > form > fieldset > fieldset > a{background:url(../img/bt_more-black.png) no-repeat 0 0; text-align:center; display:block; height:36px; font:bold 12px/36px Arial,Helvetica,sans-serif; text-decoration:none; color:#333; float: left; width: 100%;outline:none!important;}
+section#new_form > form > fieldset > fieldset > a:hover{background: #008df2 url(../img/bt_more-white.png) no-repeat 0 10px; color:#fff}
+section#new_form > form > fieldset > fieldset > a.telefonos {background-position: 66px 10px;}
+section#new_form > form > fieldset > fieldset > a.emails {background-position: 75px 10px;}
+section#new_form > form > fieldset > fieldset > a.identifications {background-position: 53px 10px;}
+section#new_form > form > fieldset > fieldset > a.direccion {background-position: 126px 10px;}
+section#new_form > form > fieldset > fieldset > a.custom_attributes {background-position: 101px 10px;}
+section#new_form > form > fieldset > fieldset > a.delete{color: red; background:url(../img/bt_less-red.png) no-repeat 5px 10px;}
 
-section#new_form > form > fieldset > label > a{background:url(../img/bt_more-black.png) no-repeat 0 0; text-align:center; display:block; height:36px; font:bold 12px/36px Arial,Helvetica,sans-serif; text-decoration:none; color:#333; float: left; width: 100%;outline:none!important;}
-section#new_form > form > fieldset > label > a:hover{background: #008df2 url(../img/bt_more-white.png) no-repeat 0 10px; color:#fff}
-section#new_form > form > fieldset > label > a.telefonos {background-position: 66px 10px;}
-section#new_form > form > fieldset > label > a.emails {background-position: 75px 10px;}
-section#new_form > form > fieldset > label > a.identifications {background-position: 53px 10px;}
-section#new_form > form > fieldset > label > a.direccion {background-position: 126px 10px;}
-section#new_form > form > fieldset > label > a.custom_attributes {background-position: 101px 10px;}
-section#new_form > form > fieldset > label > a.delete{color: red; background:url(../img/bt_less-red.png) no-repeat 5px 10px;}
-
-section#new_form > form > fieldset > label > input.no_bg {background: transparent; border:0;}
+section#new_form > form > fieldset > fieldset > input.no_bg {background: transparent; border:0;}
 
 section#new_form > form > fieldset > div > label {float: left;}
 section#new_form > form > fieldset > div > label[for="sexo"] {float: right; padding: 0 6px 0 0; font-size: 15px; color: #4d4d4d; font-weight: bold;}
@@ -43,29 +43,27 @@ section#new_form > form > fieldset > div > label[for="sexo"] > input {width: aut
 section#new_form > form > fieldset > div > label[for="apellido"] > input {margin-left: 0; padding-left:0;}
 section#new_form > form > fieldset > div > label > input{background: transparent; float:left; width:70px; height:34px; padding-left:8px; margin-left:10px; font:bold 17px Arial,Helvetica,sans-serif; color:#333; border: 0;}
 
-section#new_form > form > fieldset > label > div.input-container{background:#f8f8f8; border-bottom:1px solid #CFCFCF; float:left; min-height:84px; position:relative; top:0; width:100%; display:none; z-index:1000;}
-section#new_form > form > fieldset > label > div.input-container:last-child{border-bottom:0; display:none}
-section#new_form > form > fieldset > label > div.input-container > label{float:left; width:210px; margin-bottom:7px; padding:0 9px; font:bold 12px/23px Arial,Helvetica,sans-serif; color:#333; position: relative; z-index: 100; overflow: hidden;}
-section#new_form > form > fieldset > label > div.input-container > label.public{width:auto; padding:0 0 0 75px}
-section#new_form > form > fieldset > label > div.input-container > label.primary{width:auto}
-section#new_form > form > fieldset > label > div.input-container > label[for="custom_value"]{display:none;}
-section#new_form > form > fieldset > label > div.input-container > label > select{float:right; width:147px; height:23px; border:1px solid #cfcfcf; padding:0; font:normal 12px/22px Arial,Helvetica,sans-serif; vertical-align:middle; position: relative; z-index: 100; overflow:hidden;}
-section#new_form > form > fieldset > label > div.input-container > label > select > option{border:0; padding:0; vertical-align:middle; position:relative; z-index: 100;}
-section#new_form > form > fieldset > label > div.input-container > label > input{float:right; width:140px; height:21px; padding:0 0 0 5px; border:1px solid #cfcfcf; font:normal 12px/22px Arial,Helvetica,sans-serif; color:#333;  position:relative; z-index:1000;}
-section#new_form > form > fieldset > label > div.input-container > label > input[type="checkbox"]{float:left; margin:1px 5px 3px; vertical-align:middle; width:auto}
+section#new_form > form > fieldset > fieldset > div.input-container{background:#f8f8f8; border-bottom:1px solid #CFCFCF; float:left; min-height:84px; position:relative; top:0; width:100%; display:none; z-index:1000;}
+section#new_form > form > fieldset > fieldset > div.input-container:last-child{border-bottom:0; display:none}
+section#new_form > form > fieldset > fieldset > div.input-container > label{float:left; width:210px; margin-bottom:7px; padding:0 9px; font:bold 12px/23px Arial,Helvetica,sans-serif; color:#333; position: relative; z-index: 100; overflow: hidden;}
+section#new_form > form > fieldset > fieldset > div.input-container > label.public{width:auto; padding:0 0 0 75px}
+section#new_form > form > fieldset > fieldset > div.input-container > label.primary{width:auto}
+section#new_form > form > fieldset > fieldset > div.input-container > label[for="custom_value"]{display:none;}
+section#new_form > form > fieldset > fieldset > div.input-container > label > select{float:right; width:147px; height:23px; border:1px solid #cfcfcf; padding:0; font:normal 12px/22px Arial,Helvetica,sans-serif; vertical-align:middle; position: relative; z-index: 100; overflow:hidden;}
+section#new_form > form > fieldset > fieldset > div.input-container > label > select > option{border:0; padding:0; vertical-align:middle; position:relative; z-index: 100;}
+section#new_form > form > fieldset > fieldset > div.input-container > label > input{float:right; width:140px; height:21px; padding:0 0 0 5px; border:1px solid #cfcfcf; font:normal 12px/22px Arial,Helvetica,sans-serif; color:#333;  position:relative; z-index:1000;}
+section#new_form > form > fieldset > fieldset > div.input-container > label > input[type="checkbox"]{float:left; margin:1px 5px 3px; vertical-align:middle; width:auto}
 
-section#new_form > form > fieldset > label[rel="direccion"], section#new_form > form > fieldset > label[rel="custom_attributes"]{width:346px}
-section#new_form > form > fieldset > label[rel="direccion"]{margin-right:8px; clear:left;}
-section#new_form > form > fieldset > label[rel="direccion"] > div.input-container > label {padding:0 9px 0 69px; width: 220px;}
-section#new_form > form > fieldset > label[rel="custom_attributes"] > div.input-container > label{width:190px; padding:0 9px 0 79px}
-section#new_form > form > fieldset > label[rel="custom_attributes"] > div.input-container > label.primary{width:auto}
-section#new_form > form > fieldset > label[rel="custom_attributes"] > div.input-container > label.public, section#new_form > form > fieldset > label[rel="direccion"] > div.input-container > label.public{padding:0 9px 0 133px}
-section#new_form > form > fieldset > label[rel="direccion"] > div.input-container > label.public, section#new_form > form > fieldset > label[rel="direccion"] > div.input-container > label.primary{padding:0 9px 0 143px; width: auto!important;}
-section#new_form > form > fieldset > label[rel="custom_attributes"] > div.input-container > label.primary, label.public, section#new_form > form > fieldset > label[rel="direccion"] > div.input-container > label.primary{padding:0; width: auto!important;}
+section#new_form > form > fieldset > fieldset[rel="direccion"], section#new_form > form > fieldset > fieldset[rel="custom_attributes"]{width:346px}
+section#new_form > form > fieldset > fieldset[rel="direccion"]{margin-right:8px; clear:left;}
+section#new_form > form > fieldset > fieldset[rel="direccion"] > div.input-container > label {padding:0 9px 0 69px; width: 220px;}
+section#new_form > form > fieldset > fieldset[rel="custom_attributes"] > div.input-container > label{width:190px; padding:0 9px 0 79px}
+section#new_form > form > fieldset > fieldset[rel="custom_attributes"] > div.input-container > label.primary{width:auto}
+section#new_form > form > fieldset > fieldset[rel="custom_attributes"] > div.input-container > label.public, section#new_form > form > fieldset > fieldset[rel="direccion"] > div.input-container > label.public{padding:0 9px 0 133px}
+section#new_form > form > fieldset > fieldset[rel="direccion"] > div.input-container > label.public, section#new_form > form > fieldset > fieldset[rel="direccion"] > div.input-container > label.primary{padding:0 9px 0 143px; width: auto!important;}
+section#new_form > form > fieldset > fieldset[rel="custom_attributes"] > div.input-container > label.primary, label.public, section#new_form > form > fieldset > fieldset[rel="direccion"] > div.input-container > label.primary{padding:0; width: auto!important;}
 
-section#new_form > form > fieldset > label[rel="direccion"] > div.input-container > label[for="state_direccion"], section#new_form > form > fieldset > label[rel="direccion"] > div.input-container > label[for="city_direccion"], section#new_form > form > fieldset > label[rel="direccion"] > div.input-container > label[for="postal_direccion"] {
-	display: none;
-}
+section#new_form > form > fieldset > fieldset[rel="direccion"] > div.input-container > label[for="state_direccion"], section#new_form > form > fieldset > fieldset[rel="direccion"] > div.input-container > label[for="city_direccion"], section#new_form > form > fieldset > fieldset[rel="direccion"] > div.input-container > label[for="postal_direccion"] {display: none;}
  
 section#new_form > form > fieldset > input[type="submit"]{width:704px; height:38px; background:url(../img/bt_cadastrar.png) 0 0; display:block; text-align:center; color:#fff; font:bold 17px Arial,Helvetica,sans-serif; border:0}
 section#new_form > form > fieldset > input[type="submit"]:hover{background-position:-704px 0}
